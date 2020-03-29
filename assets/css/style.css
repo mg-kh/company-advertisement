@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+
+body {
+	margin: 0;
+	padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+.btn-primary {
+	color: #fff;
+	background-color: #62a8ea;
+	border-color: #62a8ea;
+}
+.form-control-lg {
+	font-size: 1rem;
+}
+a, .btn:focus, .btn:active {
+	outline: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+}
+.p-70 {
+	padding: 70px 0;
+}
+.service, .key-skill, .testimonial, .footer {
+	background-color: #F9F9F9;
+}
+
+/* navbar */
+.navbar {
+	padding: 25px 0;
+}
+.navbar .navbar-brand {
+	font-size: 30px;
+	color: #fff !important;
+}
+.navbar .navbar-brand > span {
+	color: #e74430;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+	padding-right: 25px;
+	letter-spacing: 0.5px;
+	transition: 0.5s;
+	color: #fff;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+	color: #62a8ea;
+	cursor: pointer;
+}
+.stickyNav {
+	background: #ffffff;
+	color: #333333;
+	padding: 16px 0;
+	transition: 0.6s;
+	box-shadow: 1px 1px 8px gray;
+}
+.stickyNav .navbar-nav .nav-item .nav-link:hover {
+	color: #62a8ea !important;
+	cursor: pointer;
+}
+.stickyNav .navbar-brand,
+.stickyNav .navbar-nav .nav-item .nav-link,
+.stickyNav .navbar-toggler i
+{
+	color: #000 !important;
+}
+
+/* home */
+.bg-banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../../img/showcase.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+.bg-banner::after {
+	content: '';
+	position: absolute;
+	background: rgba(0,0,0,0.3);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+.caption {
+	width: 70%;
+	z-index: 999;
+}
+#home .caption h1 {
+	font-size: 4rem;
+}
+.caption .caption-text {
+	font-size: 20px;
+	letter-spacing: 0.5px;
+}
+
+/* about */
+.about-text-wrapper, .about-img-wrapper {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.about-text {
+	line-height: 2;
+}
+
+/* services */
+.service .service-box {
+	text-align: center;
+    background: #fff;
+    padding: 30px;
+    margin-top: 40px;
+    transition: 0.5s;
+    height: 300px;
+}
+.service .service-box:hover {
+	box-shadow: 1px 1px 35px rgba(0,0,0,0.1);
+}
+.service .service-box .icon {
+	margin-bottom: 15px;
+}
+.service .service-box .icon .fa {
+	font-size: 25px;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	border: 1px solid #62a8ea;
+	background-color: #62a8ea;
+	line-height: 75px;
+	color: #ffffff;
+    transition: 0.5s;
+}
+.service .service-box:hover .icon .fa {
+	border: 1px solid #007bff;
+	background-color: #007bff;
+}
+.service .service-box .text {
+	line-height: 1.5;
+}
+
+/* contact */
+.contact-now {
+	background-color: #007bff;
+}
+.contact-now .text, .contact-now .button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.contact-now .btn-light:hover {
+	color: #fff;
+	background-color: #e74430;
+	border-color: #e74430;
+}
+
+/* skill */
+.skill-text {
+	line-height: 1.7;
+}
+.skill:first-child {
+	margin-top: 0;
+}
+.skill {
+	margin-top: 25px;
+	position: relative;
+}
+.skill .progress {
+	margin-top: 10px;
+}
+.skill .progress .per1, 
+.skill .progress .per2, 
+.skill .progress .per3 
+{
+	position: absolute;
+	top: 5px;
+}
+.per1 {
+	left: 53%;
+}
+.per2 {
+	left: 66%;
+}
+.per3 {
+	left: 83%;
+}
+
+/* portfolio */
+/*.grid-height {
+	height: 500px !important;
+}*/
+.work img {
+	border-radius: 6px;
+}
+
+/* testimonial */
+.carousel-indicators li {
+	border-radius: 50%;
+	width: 13px;
+	height: 13px;	
+	background-color: #007bff;
+}
+.carousel-item {
+    width: 100%;
+    height: 380px;
+}
+.carousel-caption {
+	color: #000;
+}
+.carousel-caption img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+/* contact */
+.contact-text p {
+	line-height: 1.8;
+}
+.contact-info > span {
+	display: block;
+	margin-bottom: 10px;
+}
+.contact-info span > i {
+	padding: 10px;
+	background-color: #007bff;
+	border-radius: 50%;
+	color: #fff;
+	margin-right: 20px;
+	width: 36px;
+	height: 36px;
+}
+
+/* footer */
+footer .about-text {
+	line-height: 1.8;
+}
+footer .text-section a {
+	display: block;
+	color: #565656;
+	margin-top: 12px;
+}
+
+/* back to top button */
+#backToTop {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	display: none;
+}
+#backToTop .fas {
+	font-size: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid #007bff;
+	background-color: #007bff;
+	line-height: 40px;
+	text-align: center;
+	color: #ffffff;
+}
+
+/* media query */
+@media screen and (max-width: 992px) {
+	.navbar .navbar-nav {
+		background-color: #fff;
+		text-align: center;
+		padding: 20px 0;
+	}
+	.navbar .navbar-nav .nav-item .nav-link {
+		color: #000000;
+		padding: 15px 0;
+	}
+	.service .service-box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		max-height: 300px;
+	}
+	.skill-progress,
+	.contact-field {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+@media screen and (max-width: 768px) {
+	#home .caption h1 {
+		font-size: 3.5rem;
+	}
+	#about h4 {
+		font-size: 3rem;
+	}
+    .navbar .navbar-nav {
+		background-color: #fff;
+		text-align: center;
+		padding: 20px 0;
+	}
+	.navbar .navbar-nav .nav-item .nav-link {
+		color: #000000;
+		padding: 15px 0;
+	}
+	.about .about-img {
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.about .about-img img {
+		width: 70%;
+	}
+	.contact-now .text {
+		text-align: center;
+	}
+	.key-skill .skill-text,
+	#contact .contact-text,
+	.footer .row > *
+	{
+		margin-bottom: 20px;
+	}
+	.portfolio-filter > button {
+		margin-bottom: 5px;
+	}
+}
+@media screen and (max-width: 576px) {
+	#home .caption h1 {
+		font-size: 2.5rem;
+	}
+	.caption .caption-text {
+		font-size: 16px;
+		letter-spacing: 0.5px;
+		margin-bottom: 2rem !important;
+	}
+	#home .caption a.btn-lg {
+		font-size: 16px;
+	}
+	#about h1 {
+		font-size: 2rem;
+	}
+	.navbar-expand-lg > .container, 
+	.navbar-expand-lg > .container-fluid {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.navbar {
+		padding: 25px 0;
+	}
+}
